@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block amit %}
+    {% for post in amits%}
+        <h1>{{ post.title }}</h1>
+        <p>By {{ post.author }} on {{ post.date }}</p>
+        <p> {{ post.content }} </p>
+    {% endfor%}
+{% endblock amit %}
